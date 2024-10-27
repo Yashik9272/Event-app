@@ -1,0 +1,45 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.search-bar {
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.event-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  width: 300px;
+  text-align: left;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.event-item:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    width: 80%;
+  }
+  
+  .event-item {
+    width: 80%;
+  }
+}
